@@ -4,7 +4,7 @@ SET DIR_RAIZ=%cd%
 set VERSAO=%BUILD_NUMBER%
 set DESTINO=%DIR_RAIZ%\ScriptBuild\BuildDist\%VERSAO%
 
-call C:\Users\appveyor\AppData\Local\Android\android-sdk\tools\android list sdk
+call C:\Users\appveyor\AppData\Local\Android\android-sdk\tools\android update sdk --no-ui --filter 6,tool,platform-tool,doc
 
 cd %DIR_RAIZ%\TesteTTS 
 IF exist bin ( rmdir /S /Q bin )
