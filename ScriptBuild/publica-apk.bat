@@ -1,0 +1,15 @@
+SET android_store_password=01062011
+SET android_alias_password=01062011
+SET DIR_RAIZ=%cd%
+set VERSAO=%BUILD_NUMBER%
+set DESTINO=%DIR_RAIZ%\ScriptBuild\BuildDist\%VERSAO%
+
+cd %DIR_RAIZ%\TesteTTS 
+IF exist bin ( rmdir /S /Q bin )
+call ant release -Dkey.alias.password=%android_alias_password% -Dkey.store.password=%android_store_password% -Dkey.alias=hbmdmpuxada -Dkey.store=..\\hbmdm-android.keystore
+cd ..
+
+mkdir %DESTINO%\Android
+copy /Y %DIR_RAIZ_ANDROID%\TesteTTS\bin\TesteTTS-release.apk %DESTINO%\Android\TesteTTS.apk
+
+cd %DIR_RAIZ%

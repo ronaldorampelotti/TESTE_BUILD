@@ -1,0 +1,17 @@
+version: 1.0.{build}
+
+# Tira o build MSBuild -- Projeto Java
+build: off
+
+# Antes de gerar build deve instalar SDK Android e Antes
+before_build:
+  - choco install android-sdk
+  - choco install ant
+
+# Roda arquivo customizado de build -- .bat com chamdas ao ant release Java
+build_script:
+  - ScriptsBuild\publica-apk.bat
+ 
+# Artefato gerado
+artifacts:
+  - path: ScriptsBuild\BuildDist  
