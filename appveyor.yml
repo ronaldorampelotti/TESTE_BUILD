@@ -10,7 +10,7 @@ before_build:
 
 # Roda arquivo customizado de build -- .bat com chamdas ao ant release Java
 build_script:
-  - ScriptsBuild\publica-apk.bat
+  - ScriptBuild\publica-apk.bat
  
 # Artefato gerado
 artifacts:
