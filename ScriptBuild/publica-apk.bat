@@ -6,7 +6,7 @@ set DESTINO=%DIR_RAIZ%\ScriptBuild\BuildDist\%VERSAO%
 
 cd %DIR_RAIZ%\TesteTTS 
 IF exist bin ( rmdir /S /Q bin )
-call ant release -Dkey.alias.password=%android_alias_password% -Dkey.store.password=%android_store_password% -Dkey.alias=hbmdmpuxada -Dkey.store=..\\hbmdm-android.keystore
+call C:\tools\apache-ant-1.9.4\bin\ant release -Dkey.alias.password=%android_alias_password% -Dkey.store.password=%android_store_password% -Dkey.alias=hbmdmpuxada -Dkey.store=..\\hbmdm-android.keystore
 cd ..
 
 mkdir %DESTINO%\Android
