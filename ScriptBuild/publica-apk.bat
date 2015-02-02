@@ -4,7 +4,7 @@ SET DIR_RAIZ=%cd%
 set VERSAO=%BUILD_NUMBER%
 set DESTINO=%DIR_RAIZ%\ScriptBuild\BuildDist\%VERSAO%
 
-echo y|call C:\Users\appveyor\AppData\Local\Android\android-sdk\tools\android update sdk --no-ui --filter android-19,tools,platform-tools,build-tools-19.1.0
+echo y|call C:\Users\appveyor\AppData\Local\Android\android-sdk\tools\android update sdk --no-ui --filter 1,2,3,13
 
 
 cd %DIR_RAIZ%\TesteTTS 
