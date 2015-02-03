@@ -1,8 +1,9 @@
 SET android_store_password=01062011
 SET android_alias_password=01062011
 SET DIR_RAIZ=%cd%
-set VERSAO=%BUILD_NUMBER%
-set DESTINO=%DIR_RAIZ%\ScriptBuild\BuildDist\%VERSAO%
+SET VERSAO=%BUILD_NUMBER%
+SET DESTINO=%DIR_RAIZ%\ScriptBuild\BuildDist\%VERSAO%
+SET "JAVA_HOME=C:\Program Files\Java\jdk1.8.0"
 
 echo y|call C:\Users\appveyor\AppData\Local\Android\android-sdk\tools\android update sdk --no-ui --all --filter 1,2,3,android-19
 

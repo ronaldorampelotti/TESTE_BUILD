@@ -5,7 +5,6 @@ build: off
 
 # Antes de gerar build deve instalar SDK Android e Antes
 before_build:
-  - choco install java.jdk
   - choco install android-sdk
   - choco install ant
 
