@@ -13,7 +13,6 @@ IF exist bin ( rmdir /S /Q bin )
 call C:\tools\apache-ant-1.9.4\bin\ant release -Dkey.alias.password=%android_alias_password% -Dkey.store.password=%android_store_password% -Dkey.alias=hbmdmpuxada -Dkey.store=..\\hbmdm-android.keystore
 cd ..
 
-mkdir %DESTINO%\Android
-copy /Y %DIR_RAIZ_ANDROID%\TesteTTS\bin\TesteTTS-release.apk %DESTINO%\Android\TesteTTS.apk
+copy /Y %DIR_RAIZ%\TesteTTS\bin\Principal-release.apk %DIR_RAIZ%\ScriptBuild\BuildDist\TesteTTS.apk
 
 cd %DIR_RAIZ%
