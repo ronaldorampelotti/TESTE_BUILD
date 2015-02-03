@@ -14,4 +14,4 @@ build_script:
  
 # Artefato gerado
 artifacts:
-  - path: ScriptBuild\BuildDist  
+  - path: ScriptBuild\BuildDist
